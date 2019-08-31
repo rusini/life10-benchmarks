@@ -7,7 +7,7 @@ This is a straightforward implementation of the [Game of Life][0] rules in 10 pr
   * [PHP][3] &mdash; [life.php](life.php)
   * [Perl][4] (version 5) &mdash; [life.pl](life.pl)
   * [Ruby][5] &mdash; [life.rb](life.rb)
-  * [JavaScript/ECMAScript][6] (Node.js) &mdash; [life.js](life.js)
+  * [JavaScript/ECMAScript][6] (via Node.js) &mdash; [life.js](life.js)
   * [Tcl][7] &mdash; [life.tcl](life.tcl)
   * [Lua][8] &mdash; [life.lua](life.lua)
   * [Scheme][9] (at least R5RS and later) &mdash; [life.scm](life.scm)

@@ -1,4 +1,4 @@
-// life.js -- Conway's Game of Life in JavaScript/ECMAScript (Node.js)
+// life.js -- Conway's Game of Life in JavaScript/ECMAScript (via Node.js)
 
 n = 40, m = 80;
 g = 66000;

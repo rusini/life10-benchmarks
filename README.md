@@ -27,8 +27,7 @@ The choice of languages is made due to the following:
   * These are all dynamically-typed programming languages (except C++, which is included for reference purposes)
   * The implementations have relatively lightweight installation packages for Unix-like systems (again, except for C++ ;-)
 
-A performance comparison report and an analisis of MANOOL syntax and semantics with respect of these programming languages is to follow at some point of the
-future.
+A performance comparison report and an analysis of MANOOL syntax and semantics with respect to these programming languages is to follow at some point in the future.
 
 The examples are written in the most _idiomatic_ but most _similar_ way from the performance comparison and stylistic point of view. I did not have any previous
 working experience with Python, Ruby, Tcl, Lua, and Scheme (had never written code of similar complexity), so you are welcome to suggest improvements if there

@@ -36,71 +36,61 @@ are even more idiomatic ways to use them.
 
 Examples of command line to run:
 
-### C++
+* C++:
 
-    g++ -std=c++11 -O3 life.cc && time ./a.out; rm -f a.out
+      g++ -std=c++11 -O3 life.cc && time ./a.out; rm -f a.out
 
-or
+  or
 
-    clang++ -std=c++11 -O3 life.cc && time ./a.out; rm -f a.out
+      clang++ -std=c++11 -O3 life.cc && time ./a.out; rm -f a.out
 
+* Python:
 
-### Python
+      time python life.py
 
-    time python life.py
+  or
 
-or
+      time python3 life.py3
 
-    time python3 life.py3
+* PHP:
 
+      time php life.php
 
-### PHP
+* Perl:
 
-    time php life.php
+      time perl life.pl
 
+* Ruby:
 
-### Perl
+      time ruby life.rb
 
-    time perl life.pl
+* JavaScript/ECMAScript:
 
+      time node life.js
 
-### Ruby
+* Tcl:
 
-    time ruby life.rb
+      time tclsh life.tcl
 
+* Lua:
 
-### JavaScript/ECMAScript
+      time lua life.lua
 
-    time node life.js
+  or
 
+      time luajit life.lua
 
-### Tcl
+* Scheme:
 
-    time tclsh life.tcl
+      time guile life.scm
 
+  or
 
-### Lua
+      csc -C -O3 life.scm && time ./life; rm -f life
 
-    time lua life.lua
+* MANOOL:
 
-or
-
-    time luajit life.lua
-
-
-### Scheme
-
-    time guile life.scm
-
-or
-
-    csc -C -O3 life.scm && time ./life; rm -f life
-
-
-### MANOOL
-
-    time MNL_PATH=~/manool/build/lib ~/manool/build/mnlexec life.mnl
-
+      time MNL_PATH=~/manool/build/lib ~/manool/build/mnlexec life.mnl
 
 -----
 

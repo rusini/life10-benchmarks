@@ -11,9 +11,9 @@ function display(b) {
 }
 
 function main() {
-   var b = new Array(n);
+   var b = [];
    for (var i = 0; i < n; i++) {
-      b[i] = new Array(m);
+      b[i] = [];
       for (var j = 0; j < m; j++) b[i][j] = 0;
    }
    // initialization
@@ -28,8 +28,8 @@ function main() {
    // end of initialization
    process.stdout.write('Before:\n'); display(b);
 
-   var nextb = new Array(n);
-   for (var i = 0; i < n; i++) nextb[i] = new Array(m);
+   var nextb = [];
+   for (var i = 0; i < n; i++) nextb[i] = [];
    var nm1 = n - 1, mm1 = m - 1;
    for (var k = 0; k < g; k++) {
       for (var i = 0; i < n; i++) {

@@ -1,4 +1,4 @@
-# life.py -- Conway's Game of Life in Python (version 3)
+# life.py3 -- Conway's Game of Life in Python (version 3)
 
 from sys import stdout
 

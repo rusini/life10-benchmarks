@@ -1,0 +1,58 @@
+-- life.mnl -- Conway's Game of Life in MANOOL (version 0.3)
+
+{ {extern "manool.org.18/std/0.3/all"} in
+: let { AllocOpt = True } in
+: let { N = 40; M = 80 } in
+: let { G = 1000 } in
+
+: let
+  { Display =
+    { proc { B } as
+    : for { I = Range[N]$ } do
+    : do Out.WriteLine[] after
+    : for { J = Range[M]$ } do
+      Out.Write[{if B[I; J] <> 0 then "*" else " "}]
+    }
+  }
+  in
+
+: var { B = {array N of: array M of 0} } in
+  -- initialization
+  B[19; 41] = 1
+  B[20; 40] = 1
+  B[21; 40] = 1
+  B[22; 40] = 1
+  B[22; 41] = 1
+  B[22; 42] = 1
+  B[22; 43] = 1
+  B[19; 44] = 1
+  -- end of initialization
+  Out.WriteLine["Before:"]; Display[B]
+
+  { var { NextB = B } in
+  : repeat G do
+  : do {if ~AllocOpt then (B = NextB)' else {assign B = NextB; NextB = B}'}% after
+  : for { I = Range[N]$ } do
+  : var { Up = {if I <> 0 then I - 1 else (N - 1)$}; Down = {if I <> (N - 1)$ then I + 1 else 0} } in
+  : for { J = Range[M]$ } do
+  : var { Left = {if J <> 0 then J - 1 else (M - 1)$}; Right = {if J <> (M - 1)$ then J + 1 else 0} } in
+  : var
+    { Count =
+      B[Up  ; Left ] +
+      B[Up  ; J    ] +
+      B[Up  ; Right] +
+      B[I   ; Right] +
+      B[Down; Right] +
+      B[Down; J    ] +
+      B[Down; Left ] +
+      B[I   ; Left ]
+    }
+    in
+    NextB[I; J] =
+    { if Count == 2 then B[I; J] else
+    : if Count == 3 then 1 else
+      0
+    }
+  }
+  Out.WriteLine["After " G " generations:"]; Display[B]
+}

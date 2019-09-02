@@ -3,7 +3,7 @@
 N, M = 40, 80
 G = 1000
 
-def display(b)
+def display b
   for i in 0 .. N - 1
     for j in 0 .. M - 1
       print b[i][j] != 0 ? '*' : ' '
@@ -12,7 +12,7 @@ def display(b)
   end
 end
 
-def main()
+def main
   b = Array.new(N) {Array.new(M, 0)}
   # initialization
   b[19][41] = 1

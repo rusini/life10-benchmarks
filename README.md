@@ -11,7 +11,7 @@ This is a straightforward implementation of the [Game of Life][0] rules in 10 pr
   * [Tcl][7] &mdash; [life.tcl](life.tcl)
   * [Lua][8] &mdash; [life.lua](life.lua)
   * [Scheme][9] (at least R5RS and later) &mdash; [life.scm](life.scm)
-  * and my own programming language called [MANOOL](http://manool.org) &mdash; [life.mnl](life.mnl)
+  * and my own programming language called [MANOOL](https://manool.org) &mdash; [life.mnl](life.mnl)
 
 The program simply displays an initial configuration and then the configuration after _G_ generations and exits. The grid (board) dimensions are given by
 parameters _N_ and _M_ and the initial configuration is hard-coded but can be modified at your will. The universe is wrapped.
@@ -96,7 +96,7 @@ Examples of command line to run:
 
 To clone this repo:
 
-    git clone https://github.com/rusini/life10.git
+    git clone https://github.com/rusini/life10
 
 Have fun! &mdash; *[rusini](https://github.com/rusini)* &mdash; info@manool.org
 

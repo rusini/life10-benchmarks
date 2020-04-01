@@ -1,6 +1,6 @@
--- life.mnl -- Conway's Game of Life in MANOOL (version 0.3)
+-- life.mnl -- Conway's Game of Life in MANOOL (version 0.5)
 
-{ {extern "manool.org.18/std/0.3/all"} in
+{ {extern "manool.org.18/std/0.5/all"} in
 : let { AllocOpt = True } in
 : let { N = 40; M = 80 } in
 : let { G = 1000 } in

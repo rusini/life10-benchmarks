@@ -19,7 +19,7 @@ parameters _N_ and _M_ and the initial configuration is hard-coded but can be mo
 The MANOOL version has an additional parameter, _AllocOpt_, which determines whether the code is explicitly memory allocation-aware or completely relies on
 copy-on-write aspects of the language semantics.
 
-The main purpose of this repository is to have a benchmark (which is both computationally-intensive and fun) to compare performance of the MANOOL translator
+The main purpose of this repository is to have a benchmark (which is both computationally intensive and fun) to compare performance of the MANOOL translator
 with that of other language implementations and to compare MANOOL with other languages. However, while coding the same task in so many of them, I suddenly
 realized how _bizarre_ are the similarities (and differences) between programming languages.
 
@@ -27,12 +27,18 @@ The choice of languages is made due to the following:
   * These are all dynamically-typed programming languages (except C++, which is included for reference purposes)
   * The implementations have relatively lightweight installation packages for Unix-like systems (again, except for C++ ;-)
 
-A performance comparison report and an analysis of MANOOL syntax and semantics with respect to these programming languages is to follow at some point in the
-future.
+For a performance comparison report, refer to [Benchmarks.md](Benchmarks.md). The graph is in [Benchmarks.png](Benchmarks.png):
+
+![Benchmarks](https://raw.githubusercontent.com/rusini/life10/master/Benchmarks.png)
+
+An analysis of MANOOL syntax and semantics with respect to these programming languages is to follow at some point in the future.
 
 The examples are written in the most _idiomatic_ but most _similar_ way from the performance comparison and stylistic point of view. I did not have any previous
 working experience with Python, Ruby, Tcl, Lua, and Scheme (had never written code of similar complexity), so you are welcome to suggest improvements if there
 are even more idiomatic ways to use them.
+
+Construction of the implementation in MANOOL is discussed in detail in the Reddit post [&ldquo;A primer on the programming language MANOOL:
+Conway's Game of Life&rdquo;](https://www.reddit.com/r/ProgrammingLanguages/comments/h9ulvk/a_primer_on_the_programming_language_manool/).
 
 Examples of command line to run:
 

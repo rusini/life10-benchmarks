@@ -21,7 +21,7 @@ copy-on-write aspects of the language semantics.
 
 The main purpose of this repository is to have a benchmark (which is both computationally intensive and fun) to compare performance of the MANOOL translator
 with that of other language implementations and to compare MANOOL with other languages. However, while coding the same task in so many of them, I suddenly
-realized how _bizarre_ are the similarities (and differences) between programming languages.
+realized how *bizarre* are the similarities (and differences) between programming languages.
 
 The choice of languages is made due to the following:
   * These are all dynamically typed programming languages (except C++, which is included for reference purposes).
@@ -33,7 +33,7 @@ For a performance comparison report, refer to [Benchmarks.md](Benchmarks.md). Th
 
 An analysis of MANOOL syntax and semantics with respect to these programming languages is to follow at some point in the future.
 
-The examples are written in the most _idiomatic_ but most _similar_ way from the performance comparison and stylistic point of view. I did not have any previous
+The examples are written in the most *idiomatic* but most *similar* way from the performance comparison and stylistic point of view. I did not have any previous
 working experience with Python, Ruby, Tcl, Lua, and Scheme (had never written code of similar complexity), so you are welcome to suggest improvements if there
 are even more idiomatic ways to use them.
 

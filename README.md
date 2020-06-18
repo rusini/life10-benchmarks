@@ -14,7 +14,7 @@ This is a straightforward implementation of the [Game of Life][0] rules in 10 pr
   * and my own programming language called [MANOOL](https://manool.org) &mdash; [life.mnl](life.mnl)
 
 The program simply displays an initial configuration and then the configuration after _G_ generations and exits. The grid (board) dimensions are given by
-parameters _N_ and _M_ and the initial configuration is hard-coded but can be modified at your will. The universe is wrapped.
+parameters _N_ and _M_, and the initial configuration is hard-coded but can be modified at your will. The universe is wrapped.
 
 The MANOOL version has an additional parameter, _AllocOpt_, which determines whether the code is explicitly memory allocation-aware or completely relies on
 copy-on-write aspects of the language semantics.
@@ -24,8 +24,8 @@ with that of other language implementations and to compare MANOOL with other lan
 realized how _bizarre_ are the similarities (and differences) between programming languages.
 
 The choice of languages is made due to the following:
-  * These are all dynamically-typed programming languages (except C++, which is included for reference purposes)
-  * The implementations have relatively lightweight installation packages for Unix-like systems (again, except for C++ ;-)
+  * These are all dynamically typed programming languages (except C++, which is included for reference purposes).
+  * The implementations have relatively lightweight installation packages for Unix-like systems (again, except for C++ ;-).
 
 For a performance comparison report, refer to [Benchmarks.md](Benchmarks.md). The graph is in [Benchmarks.png](Benchmarks.png):
 

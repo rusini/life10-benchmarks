@@ -3,10 +3,10 @@
 # include <cstring>
 # include <iostream>
 
-static constexpr int n = 40, m = 80;
-static constexpr int g = 66000;
+constexpr int n = 40, m = 80;
+constexpr int g = 66000;
 
-static void display(signed char b[n][m]) {
+static void display(signed char b[n][m]) noexcept {
    for (int i = 0; i < n; ++i) {
       for (int j = 0; j < m; ++j) std::cout << (b[i][j] ? '*' : ' ');
       std::cout << '\n';
@@ -14,15 +14,15 @@ static void display(signed char b[n][m]) {
 }
 
 int main() {
-   signed char b[n][m] = {};
+   signed char b[n][m]{};
    // initialization
-   b[19][41] = 1;
-   b[20][40] = 1;
-   b[21][40] = 1;
-   b[22][40] = 1;
-   b[22][41] = 1;
-   b[22][42] = 1;
-   b[22][43] = 1;
+   b[19][41] =
+   b[20][40] =
+   b[21][40] =
+   b[22][40] =
+   b[22][41] =
+   b[22][42] =
+   b[22][43] =
    b[19][44] = 1;
    // end of initialization
    std::cout << "Before:\n"; display(b);

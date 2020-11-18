@@ -13,20 +13,20 @@ def display b
 end
 
 def main
-  b = Array.new(N) {Array.new(M, 0)}
+  b = Array.new(N) { Array.new(M, 0) }
   # initialization
-  b[19][41] = 1
-  b[20][40] = 1
-  b[21][40] = 1
-  b[22][40] = 1
-  b[22][41] = 1
-  b[22][42] = 1
-  b[22][43] = 1
+  b[19][41] =
+  b[20][40] =
+  b[21][40] =
+  b[22][40] =
+  b[22][41] =
+  b[22][42] =
+  b[22][43] =
   b[19][44] = 1
   # end of initialization
   puts "Before:"; display b
 
-  nextb = Array.new(N) {Array.new(M, 0)}
+  nextb = Array.new(N) { Array.new(M, 0) }
   nm1, mm1 = N - 1, M - 1
   for k in 1 .. G
     for i in 0 .. nm1
